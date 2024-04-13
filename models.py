@@ -24,3 +24,8 @@ class User2(db.Model):
 @login_manager.user_loader
 def user_loader(user_id):
     return User.query.get(int(user_id))
+
+class User3(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username3 = db.Column(db.String(80), unique=True, nullable=False)
+    password3 = db.Column(db.String(80), nullable=False)
