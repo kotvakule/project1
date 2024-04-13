@@ -29,3 +29,8 @@ class User3(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username3 = db.Column(db.String(80), unique=True, nullable=False)
     password3 = db.Column(db.String(80), nullable=False)
+
+class User4(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username4 = db.Column(db.String(80), unique=True, nullable=False)
+    password4 = db.Column(db.String(80), nullable=False)
